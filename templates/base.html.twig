@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+    <link rel = "stylesheet" href= "{{ asset('css/styles.css') }}">
+    
+    <rel="stylesheet">
 
-        {% block javascripts %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
-</html>
+ <title>Ocean_Diving</title>
+
+ <header>
+
+{# titre #}
+ <h1>Ocean Diving</h1>
+
+ 
+ 
+   {# image 3 logos     #}
+<div id="block1">
+
+    <div id="conteneur1">
+            <img src= "images/home.png" style= height="700px" width="50px">
+            <p>Accueil</p>
+    </div> 
+    
+    <div id="conteneur2">
+        
+            <img src= "images/compte.png" style= height="700px" width="50px">
+            <p>Compte</p>
+     </div>
+
+     <div id="conteneur3">
+        
+            <img src= "images/panier.png" style= height="700px" width="50px">
+            <p>Panier</p>
+    </div>
+</div>
+
+    
+</header>
+{% block body %}
+{% endblock %}
+{# footer #}
+<footer>
+
+<div id="block2">
+
+    <div id="conteneur4">
+    
+            <h2>Marques</h2>
+            <p>Cressi</p>
+            <p>Agualung</p>
+            <p>Beuchat</p>
+            
+    </div> 
+
+    <div id="conteneur5">
+     
+            <p>Nous Contacter</p>
+            <p>Mentions Légales</p>
+            <p>Traitement des Données Personnelles </p>
+            <p>Conditions Générales de vente</p>
+    </div> 
+
+    <div id="conteneur6">
+         
+            <img src= "images/linkedin.png" style= height="700px" width="50px">
+            <img src= "images/facebook.png" style= height="700px" width="50px">
+            <img src= "images/twitter.png" style= height="700px" width="50px">
+    </div> 
+
+</div>
+</footer>
+
+
+

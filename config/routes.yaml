@@ -1,3 +1,19 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+# config/routes.yaml
+
+  # the "app_page_number" route name is not important yet
+app_page_page1:
+    path: /page
+    controller: App\Controller\Page1::articles
+
+    
+    # the "app_page_number" route name is not important yet
+app_page_page2:
+    path: /page/{id}
+    controller: App\Controller\Page1::article
+
+  
+
+  
