@@ -75,7 +75,13 @@ h1{
 }
 
 
+#photo_plongee{
+       display:flex;
+       width: 700px;
+       height: 100px;
 
+
+}
 
 footer{
 
