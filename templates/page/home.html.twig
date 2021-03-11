@@ -1,12 +1,21 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-      
-<ul id="navigation">
-  <li><button type="button"class= "bouton_plongee" href="/category/plongee">PLONGEE</button>
-  <img class="image_navigation" src="https://cdn.pixabay.com/photo/2015/03/26/05/55/diving-689831_1280.jpg" alt="" width="10%" title="PLONGEE"></li>
-  <li><button type="button"class= "bouton_apnee" href="/category/apnee">APNEE</button>
-  <img class="image_navigation" src="https://cdn.pixabay.com/photo/2016/05/10/05/30/freediving-1383103_1280.jpg" alt="" width="10%" title="APNEE"></li>
-</ul>
+
+  <div class="row">
+    <div class="col-12 col-lg-6"> 
+    <a href="/category/PLONGEE">
+      <img class="image_navigation" src="https://cdn.pixabay.com/photo/2015/03/26/05/55/diving-689831_1280.jpg" alt="" width="50%" title="PLONGEE">
+      <h6>PLONGEE</h6>
+    </a>
+    </div> 
+
+    <div class="col-12 col-lg-6">
+    <a href="/category/APNEE">
+      <img class="image_navigation" src="https://cdn.pixabay.com/photo/2016/05/10/05/30/freediving-1383103_1280.jpg" alt="" width="35%" title="APNEE">
+      <h6>APNEE</h6>
+    </div>
+
+  <div/>
 
 {% endblock %} 
