@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>{% block title %}Mon site e-commerce{% endblock %}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
+        <link rel="stylesheet" href="{{ asset('styles.css') }}">
         {% block stylesheets %}{% endblock %}  
     </head>
 
@@ -37,7 +38,7 @@
         </div>
 
       <footer class="footer">
-      <div class="container"
+      <div class="container d-flex">
          <div class="col-4">
             <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">Home </a>
