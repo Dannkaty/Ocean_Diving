@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<section class="home">
+      <article>
+        <h2>{{ article.title }}</h2>
+         <div class="content"> 
+          <img class="home" src="{{ article.image }}" alt=""> 
+          {{ article.content | raw }} 
+        </div> 
+       </article> 
+ </section> 
+
+ {% endblock %} 
+   

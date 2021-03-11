@@ -1,74 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <link rel = "stylesheet" href= "{{ asset('css/styles.css') }}">
-    
-    <rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Mon site e-commerce{% endblock %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
+        {% block stylesheets %}{% endblock %}  
+    </head>
 
- <title>Ocean_Diving</title>
-
- <header>
-
-{# titre #}
- <h1>Ocean Diving</h1>
-
- 
- 
-{# image 3 logos     #}
-<div id="block1">
-
-    <div id="conteneur1">
-            <img src= "images/home.png" style= height="700px" width="50px">
-            <p>Accueil</p>
-    </div> 
-    
-    <div id="conteneur2">
-        
-            <img src= "images/compte.png" style= height="700px" width="50px">
-            <p>Compte</p>
-     </div>
-
-     <div id="conteneur3">
-        
-            <img src= "images/panier.png" style= height="700px" width="50px">
-            <p>Panier</p>
-    </div>
-</div>
-
-    
-</header>
-{% block body %}
-{% endblock %}
-{# footer #}
-<footer>
-
-<div id="block2">
-
-    <div id="conteneur4">
-    
-            <p>Marques</p>
-            <p>Cressi</p>
-            <p>Agualung</p>
-            <p>Beuchat</p>
-            
-    </div> 
-
-    <div id="conteneur5">
-     
-            <p>Nous Contacter</p>
-            <p>Mentions Légales</p>
-            <p>Traitement des Données Personnelles </p>
-            <p>Conditions Générales de vente</p>
-    </div> 
-
-    <div id="conteneur6">
-         
-            <img src= "images/linkedin.png" style= height="700px" width="50px">
-            <img src= "images/facebook.png" style= height="700px" width="50px">
-            <img src= "images/twitter.png" style= height="700px" width="50px">
-    </div> 
-
-</div>
-</footer>
+    <body>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
+        <div class="container-fluid">
+        {% block body %}{% endblock %} 
+        </div>
 
+      <footer class="footer">
+      <div class="container"
+         <div class="col-4">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Home </a>
+            <a class="nav-link" href="#">Home </a>
+            <a class="nav-link" href="#">Home </a> 
+         </div>
+         <div class="col-4">
+            <h2>test</h2>
+         </div>
+        </div>
+      </footer>
+
+
+        {% block javascripts %}
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -4,31 +4,36 @@
 # config/routes.yaml
 
   # the "app_page_number" route name is not important yet
-app_page_page1:
-    path: /page
-    controller: App\Controller\ArticleController::articles
+app_page_home:
+    path: /
+    controller: App\Controller\HomeController::home
 
     
     # the "app_page_number" route name is not important yet
-app_page_page2:
-    path: /page/{id}
-    controller: App\Controller\Page1::article
+app_page_category:
+    path: page/category/{category}
+    controller: App\Controller\ArticleController::articles
+    
+    # the "app_page_number" route name is not important yet
+app_page_article:
+    path: page/article/{id}
+    controller: App\Controller\ArticleController::article
 
 # the "app_page_number" route name is not important yet
-app_page_page3:
-    path: /page
-    controller: App\Controller\ArticleController::home
+app_page_connection:
+    path: page/connection
+    controller: App\Controller\ArticleController::connection
 
     
     # the "app_page_number" route name is not important yet
-app_page_page4:
-    path: /page/{find catégory}
-    controller: App\Controller\Page2::articles plongee
+app_page_contact:
+    path: /contact/
+    controller: App\Controller\ArticleController::contact
 
  # the "app_page_number" route name is not important yet
-app_page_page5:
-    path: /page/{find catégory}
-    controller: App\Controller\Page2::articles apnee
+app_page_panier:
+    path: page/panier/
+    controller: App\Controller\ArticleController::panier
 
 
   

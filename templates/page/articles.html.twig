@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<section class="articles">
+    {% for article in articles %} 
+      <article>
+        <h2>{{ article.title }}</h2>
+        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }}</div> 
+          <div class="content"> 
+          <img src="{{ article.image }}" alt="https://cdn.pixabay.com/photo/2015/03/26/05/55/diving-689831_1280.jpg"> 
+          {{ article.content | raw }} 
+         <a href="/article/{{  article.id }}" class="btn btn-primary">Description de l'article</a> 
+        </div> 
+        </article> 
+       {% endfor %} 
+    </section>  
+
+ {% endblock %} 
+    

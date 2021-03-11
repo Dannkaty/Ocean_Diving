@@ -37,6 +37,11 @@ class Article
      */
     private $createdAt;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $category;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Article
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
         $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getCategory(): ?string
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?string $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }
