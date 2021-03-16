@@ -1,39 +1,27 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-# config/routes.yaml
+# #index:
+# #    path: /
+# #    controller: App\Controller\DefaultController::index
+# # config/routes.yaml
 
-  # the "app_page_number" route name is not important yet
-app_page_home:
-    path: /
-    controller: App\Controller\HomeController::home
-
-    
-    # the "app_page_number" route name is not important yet
-app_page_category:
-    path: page/category/{category}
-    controller: App\Controller\ArticleController::articles
-    
-    # the "app_page_number" route name is not important yet
-app_page_article:
-    path: page/article/{id}
-    controller: App\Controller\ArticleController::article
-
-# the "app_page_number" route name is not important yet
-app_page_connection:
-    path: page/connection
-    controller: App\Controller\ArticleController::connection
+#  the "app_page_number" route name is not important yet
+    # app_page_home:
+    # path: /
+    # controller: App\Controller\HomeController::home
 
     
-    # the "app_page_number" route name is not important yet
-app_page_contact:
-    path: /contact/
-    controller: App\Controller\ArticleController::contact
+#     # the "app_page_number" route name is not important yet
+      # app_page_category:
+      # path: page/category/{category}
+      # controller: App\Controller\ArticlesController::articles
+    
+#     # the "app_page_number" route name is not important yet
+      # app_page_article:
+      # path: page/article/{id}
+      # controller: App\Controller\ArticleController::article
 
- # the "app_page_number" route name is not important yet
-app_page_panier:
-    path: page/panier/
-    controller: App\Controller\ArticleController::panier
+
+
+    
 
 
   
