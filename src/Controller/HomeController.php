@@ -1,5 +1,7 @@
 <?php
 
+// Page Accueil avec les liens (routes)
+
 // src/Controller/pageController.php
 
 namespace App\Controller;
