@@ -47,16 +47,7 @@ class  HomeController extends AbstractController
 
 // controleur de la page contact//
 
-     /**
-     * @Route("/contact",name="contact")
-     */ 
-    public function contact(): Response
-    {   
-         return $this->render("page/contact.html.twig", [
-            'controller_name' => 'HomeController', 
-    ]);
 
-    }
 
     // controleur de la page conditionGenerales//
 
