@@ -58,19 +58,6 @@ class  HomeController extends AbstractController
 
     }
 
-// controleur de la page panier//
-
-     /**
-     * @Route("/panier",name="panier")
-     */ 
-    public function panier(): Response
-    {   
-         return $this->render("page/panier.html.twig", [
-            'controller_name' => 'HomeController', 
-    ]);
-
-    }
-
     // controleur de la page conditionGenerales//
 
     
