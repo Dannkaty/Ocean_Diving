@@ -18,8 +18,6 @@ h6 {
     flex-direction: column;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #FBFBF3;
-   
 }
 
 #row{
@@ -28,36 +26,42 @@ h6 {
      padding-left: 15px;
 }
 
+/* titre */
 h1{
     text-align: center;
     color: #59b0F6!important;
-
 }
-
+  
+/* logo header */
 .logo-home{
     position: absolute;
     right: 0; 
 }
 
-a {
+/* Texte plongee/apnee */
+a {  
     color:  #59b0F6!important;
+
 }
+
+/* hearder */
+.navbar-brand {
+    background-color: #FBFBF3!important;
+    color: #59b0F6!important;
+}
+
+/* footer */
+
 .navbar {
     background-color: #FBFBF3!important;
     color: #59b0F6!important;  
 } 
 
-.navbar-brand {
-    color: #59b0F6!important;
-    
-}
-
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: black;
-}
+} 
 
 
 
