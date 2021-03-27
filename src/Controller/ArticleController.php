@@ -9,28 +9,22 @@ use App\Entity\Article;
 use App\Repository\ArticleRepository;
 // use Symfony\Component\Form\Extension\Core\Type\TextType;
 
-
 class  ArticleController extends AbstractController
     {   
-
         /**
          * @Route("/articles/{category}",name="articles")
-         */ 
-         
+         */  
         public function articles(ArticleRepository $repo, String $category)
         {
-       
             $articles = $repo->findBy(
                 [
                     "category" => $category
                 ]
             );
-        
             return $this->render('page/articles.html.twig', [
                 'controller_name' => '1',
                 'articles' => $articles
             ]);
-       
         }
         /**
          * @Route("/article/{id}",name="category")
@@ -39,14 +33,10 @@ class  ArticleController extends AbstractController
             $repo = $this->getDoctrine()->getRepository(Article::class);
 
             $article = $repo->find($id);
-
             return $this->render('page/article.html.twig', [
                 'article' => $article,
-                ]);
-               
+                ]);          
     }   
-
-
 }
   
           
