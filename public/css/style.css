@@ -1,76 +1,64 @@
-html, body{
-    min-height: 100vh;
+html,body {
+  min-height: 100vh;
 }
 
-.header{
-    margin-bottom: 0px;
+.header {
+  margin-bottom: 0px;
 }
-body{
-    min-height: 100vh;
-    position: relative;
+body {
+  min-height: 100vh;
+  position: relative;
 }
 
 h6 {
-    padding: 1em;
+  padding: 1em;
 }
 
 .full-width {
-    width: 100%;
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px; 
 }
 
-
-
-#row{
-     display: flex;
-     padding: 30px;
-
+#row {
+  display: flex;
+  padding: 30px;
+  margin: 0;
 }
 
 /* titre */
-h1{
-    text-align: center;
-    color: #59b0F6!important;
-    background-color: #FBFBF3!important;
-    padding: 20px; 
-    margin-right: 20px;
-    
-} 
+h1 {
+  text-align: center;
+  color: #59b0f6 !important;
+  background-color: #fbfbf3 !important;
+  padding: 20px;
+  margin-right: 20px;
+}
 /* logo header */
-.logo-home{
-    position: absolute;
-    right: 5px; 
-    margin-left : 5px;
+.logo-home {
+  position: absolute;
+  right: 5px;
+  margin-left: 5px;
 }
 /* Texte plongee/apnee */
-a {  
-    color:  #59b0F6!important;
+a {
+  color: #59b0f6 !important;
 }
 /* hearder */
 .navbar-brand {
-    background-color: #FBFBF3!important;
-    color: #59b0F6!important;
-
+  background-color: #fbfbf3 !important;
+  color: #59b0f6 !important;
 }
 /* footer */
 .navbar {
-    background-color: #FBFBF3!important;
-    color: #59b0F6!important;  
-} 
+  background-color: #fbfbf3 !important;
+  color: #59b0f6 !important;
+}
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-} 
-
-
-
-
-
-
-
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
