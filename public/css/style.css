@@ -10,7 +10,7 @@ body{
     position: relative;
 }
 h1 {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
 }
 h6 {
     padding: 1em;
