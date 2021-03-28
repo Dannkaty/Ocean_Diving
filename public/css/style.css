@@ -9,7 +9,9 @@ body{
     min-height: 100vh;
     position: relative;
 }
-
+h1 {
+    margin-bottom: 0;
+}
 h6 {
     padding: 1em;
 }
