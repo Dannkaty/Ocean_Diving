@@ -1,9 +1,5 @@
 <?php
 
-// Page Accueil avec les liens (routes)
-
-// src/Controller/pageController.php
-
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,9 +11,6 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 
 class  HomeController extends AbstractController
-
-
-// controleur de la page d'acceuil//
 {
     /**
      * @Route("/",name="home")
@@ -27,12 +20,7 @@ class  HomeController extends AbstractController
         return $this->render('page/home.html.twig', [
         'controller_name' => 'HomeController',  
     ]);
-   
     }
-    
-
-// controleur de la page compte//
-
      /**
      * @Route("/compte",name="compte")
      */  
@@ -42,16 +30,7 @@ class  HomeController extends AbstractController
          'controller_name' => 'HomeController', 
 
     ]);
-
-    } 
-
-// controleur de la page contact//
-
-
-
-    // controleur de la page conditionGenerales//
-
-    
+    }
     /**
      * @Route("/conditions",name="conditions")
      */  
@@ -60,7 +39,6 @@ class  HomeController extends AbstractController
          return $this->render("page/conditions.html.twig", [
     
     ]);
-
     } 
 
 }   

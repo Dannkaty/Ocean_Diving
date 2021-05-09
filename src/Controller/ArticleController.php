@@ -21,7 +21,7 @@ class  ArticleController extends AbstractController
                     "category" => $category
                 ]
             );
-            return $this->render('page/articles.html.twig', [
+            return $this->render('articles/index.html.twig', [
                 'controller_name' => '1',
                 'articles' => $articles
             ]);
@@ -33,7 +33,7 @@ class  ArticleController extends AbstractController
             $repo = $this->getDoctrine()->getRepository(Article::class);
 
             $article = $repo->find($id);
-            return $this->render('page/article.html.twig', [
+            return $this->render('articles/index.html.twig', [
                 'article' => $article,
                 ]);          
     }   
