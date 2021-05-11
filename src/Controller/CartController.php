@@ -16,7 +16,7 @@ class CartController extends AbstractController
     /** 
      * @Route("/panier", name="cart")
      */
-    public function index(SessionInterface $session, ArticlesRepository $articleRepository)
+    public function index(SessionInterface $session, ArticlesRepository $articlesRepository)
     {
         $panier = $session->get('panier', []);
 
@@ -74,6 +74,7 @@ class CartController extends AbstractController
 
         return $this-> redirectToRoute("cart");
     }
+
 // class CartController extends AbstractController
 // {
 //     /**

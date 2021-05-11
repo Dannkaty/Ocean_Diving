@@ -4,26 +4,39 @@
 
 {% block body %}
 
+  <div class="card-body">
+<p class="card-category"> Articles de Plongée</p> 
+  {% for article in articles %}
+       {{ article.id }}
+       {{ article.title }}
+       {{ article.category }}
+      {{ article.image }}
+  {% endfor %}
+{# {% for articles in articles %}
+<h4 class="card-title ">{{ articles }}</h4>
+{% endfor %} #}
 
-        <div class="card only">
-        {# <h2>
-        {{ article.title }}
+</div>
+        {# <div class="card only">
+        {<h2>
+        {# {{ articles.title }}
         -
         {{ article.price }}   
-        €
-        </h2 #}
-            <img class="image" src="{{ article.image}}" alt="image de {{ article.title }}"> 
-            <div class="card-body">
+        € #}
+        {# </h2>  
+            <img src="{{ asset('')}}{{articles.image}}" alt="retest" class="plongee_img"> 
+            <div class="card-body"> #}
                 {# <h5 class="card-title"> {{article.title}}</h5> #}
                 {# <p class="cart-cat"> {{article.category}}</p> #}
                 {# <p class="card-text"> {{article.content}}</p> #}
-                <a href="{{ path('cart_add', {'id': article.id}) }}" class="btn btn-primary">Ajouter au panier</a>
+                {# <a href="{{ path('cart_add', {'id': article.id}) }}" class="btn btn-primary">Ajouter au panier</a> #}
                 {# <button id="checkout-button">Acheter</button> #}
-            </div>
-        </div>
+            {# </div>
+        </div>  #}
 
 
 {% endblock %}
+
 {# {% block javascripts %} (paiement)
   <script type="text/javascript">
       // Create an instance of the Stripe object with your publishable API key

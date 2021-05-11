@@ -3,6 +3,47 @@
 {% block title %}Hello ContactController!{% endblock %}
 
 {% block body %}
+{% if items | length > 0 %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>image</th>
+                <th>Produit</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+                <th>Total</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+                <tr>
+                     <td><img src="{{ asset('')}}{{item.article.image}}"/></td>
+                    <td>{{ item.article.nom}}</td>
+                    <td>{{ item.article.prix}}</td>
+                    <td>{{ item.quantity}}</td>
+                    <td>{{ item.article.prix * item.quantity }}</td>
+
+                        <a href="{{ path('cart_remove', {'id' : item.article.id}) }}" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash"></a>
+                        </a>
+
+
+                </tr>
+
+            {% endfor %}
+        </body>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-right">Total : </td>
+                <td>{{ total }}</td>
+
+                <td></td>
+
+            </tr>
+
+        </tfoot>
+    </table>
 
 {% for message in app.flashes('message') %}
     <div class="alert alert-success" role="alert">
