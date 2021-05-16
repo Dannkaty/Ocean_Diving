@@ -1,56 +1,50 @@
- {% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}Hello CardController!{% endblock %}
 
 {% block body %}
-{% if items | length > 0 %}
-    <table class="table">
-        <thead>
-            <tr>
-                <th>image</th>
-                <th>Produit</th>
-                <th>Prix</th>
-                <th>Quantité</th>
-                <th>Total</th>
 
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in items %}
-                <tr>
-                     <td><img src="{{ asset('')}}{{item.article.image}}"/></td>
-                    <td>{{ item.article.nom}}</td>
-                    <td>{{ item.article.prix}}</td>
-                    <td>{{ item.quantity}}</td>
-                    <td>{{ item.article.prix * item.quantity }}</td>
+        {% if items | length > 0 %}
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Article</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+             {# {% for item in items %}
+                        <tr>  #}
+                            {# <td><img src="{{ asset('')}}{{item.article.image}}"/></td> #}
+                            {# <td>{{ article.title}}</td> #}
+                            {# <td>{{ item.article.price}}</td> #}
+                            {# <td>{{ item.quantity}}</td> #}
+                            {# <td>{{ item.article.price * item.quantity }}</td> #}
 
-                        <a href="{{ path('cart_remove', {'id' : item.article.id}) }}" class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash"></a>
-                        </a>
+                                {# <a href="{{ path('cart_remove', {'id' : item.article.id}) }}" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash"></a>
+                                </a>
+                        </tr>
 
+                    {% endfor %} #}
+                </body>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right">Total : </td>
+                        <td>{{ total }}</td>
+                    </tr>
 
-                </tr>
+                </tfoot>
+            </table>
+        {% endif %}
 
-            {% endfor %}
-        </body>
-        <tfoot>
-            <tr>
-                <td colspan="3" class="text-right">Total : </td>
-                <td>{{ total }}</td>
-
-                <td></td>
-
-            </tr>
-
-        </tfoot>
-    </table>
-
-{% for message in app.flashes('message') %}
-    <div class="alert alert-success" role="alert">
-      {{ message }}
-    </div>
-{% endfor %}
-
- 
-
+                {% for message in app.flashes('message') %}
+                    <div class="alert alert-success" role="alert">
+                    {{ message }}
+                    </div>
+                {% endfor %}
+           
 {% endblock %} 
